@@ -1,0 +1,91 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true,
+    "mongo": true,
+    "jest": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "jest",
+    "@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-template-curly-in-string": "off",
+    "no-continue": "off",
+    "arrow-parens": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "import/no-extraneous-dependencies": "off",
+    "require-atomic-updates": "off",
+    "no-console": "off",
+    "no-underscore-dangle": "off",
+    "prefer-object-spread": "off",
+    "implicit-arrow-linebreak": "off",
+    "function-paren-newline": "off",
+    "default-case": "off",
+    "no-use-before-define": "off",
+    "no-multiple-empty-lines": "off",
+    "no-trailing-spaces": "off",
+    "newline-per-chained-call": "off",
+    "semi": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "no-spaced-func": "off",
+    "func-call-spacing": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-confusing-arrow": "off",
+    "no-await-in-loop": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "no-restricted-syntax": "off",
+    "no-promise-executor-return": "off",
+    "import/no-import-module-exports": "off",
+    "no-plusplus": "off",
+    "default-case-last": "off",
+    "no-param-reassign": "off",
+    "prefer-cons": "off",
+    "no-constant-condition": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 130
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "class-methods-use-this": "off",
+    "indent": "off",
+    "operator-linebreak": "off",
+    "object-curly-newline": "off",
+    "import/extensions": "off",
+    "import/order": "off",
+    "quote-props": "off",
+    "prefer-destructuring": "off",
+    "no-shadow": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {},
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  }
+}
